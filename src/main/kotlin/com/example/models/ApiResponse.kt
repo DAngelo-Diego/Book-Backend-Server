@@ -9,4 +9,5 @@ data class ApiResponse(
     val prevPage: Int? = null,
     val nextPage: Int? = null,
     val books: List<Book> = emptyList(),
+    val lastUpdated: Long? = null
 )

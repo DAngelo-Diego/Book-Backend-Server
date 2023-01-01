@@ -158,6 +158,7 @@ class BookRepositoryImpl : BookRepository {
             prevPage = calculatePage(page = page)[PREVIOUS_PAGE_KEY],
             nextPage = calculatePage(page = page)[NEXT_PAGE_KEY],
             books = books[page]!!,
+            lastUpdated = System.currentTimeMillis()
         )
     }
 

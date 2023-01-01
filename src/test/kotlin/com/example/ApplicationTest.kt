@@ -54,6 +54,7 @@ class ApplicationTest {
                     prevPage = calculatePage(page = page)["prevPage"],
                     nextPage = calculatePage(page = page)["nextPage"],
                     books = heroes[page - 1],
+                    lastUpdated = actual.lastUpdated
                 )
                 assertEquals(
                     expected = expected,
